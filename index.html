@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>아기 신발</title>
-    
-   
+<head>
+    <title>pattern3</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1">
     <style>
-  @font-face {
-    font-family: 'Ryman Eco';
-    src: url('https://rymaneco.github.io/font/RymanEco-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+        * {
+            margin:0;
+            padding: 0;
+        }
 
-  body {
-    font-family: 'Ryman Eco', serif;
-  }
-</style>
+        body {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
 
-  </head>
+        #menu {
+            width: 260px;
+            float: left;
+        }
 
-  <body>
-    <h1>For Sale:</h1>
-    <h2>Baby shoes. Never worn.</h2>
-  </body>
+        #section {
+            width: 700px;
+            float: right;
+        }
+
+        li {list-style: none;}
+
+        @media screen and (max-width: 767px) {
+            body {width: auto}
+            #menu {width: auto; float: none;}
+            #section {width: auto; float: none;}
+        }
+    </style>
+</head>
+<body>
+    <div id="section">
+        <h1>Miku, Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi unde quisquam. Beatae nam possimus accusantium sapiente impedit quo velit molestias tenetur, ipsa sed vel soluta doloribus modi consectetur consequatur?</p>
+    </div>
+    <div id="menu">
+        <ul>
+            <li>메뉴A</li>
+            <li>메뉴B</li>
+            <li>메뉴C</li>
+        </ul>
+    </div>
+</body>
 </html>
-
